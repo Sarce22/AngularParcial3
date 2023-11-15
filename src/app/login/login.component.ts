@@ -16,10 +16,9 @@ export class LoginComponent {
   }
 
   onLogin(){
-   
+    let usuarios = this.userService.getUser()
     this.router.navigateByUrl('dashboard')
-   
-    
+    console.log(usuarios);
   }
 
 
